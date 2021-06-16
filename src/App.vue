@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <img alt="Pirate flag" src="./assets/Pirate.png">
+    <custom-header 
+        v-bind:frase-inicial="FRASE"
+    ></custom-header>
+    <custom-form 
+        v-bind:frase-inicial="FRASE"
+    ></custom-form>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CustomHeader from './components/CustomHeader.vue'
+import CustomForm from './components/CustomForm.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CustomHeader,
+    CustomForm
+
+  },
+  data: function(){
+    return {
+      FRASE: 'En un lugar de la mancha'
+    }
   }
 }
 </script>
