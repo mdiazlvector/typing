@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <img alt="Pirate flag" src="./assets/Pirate.png">
     <custom-header 
-        v-bind:frase-inicial="FRASE"
+        v-bind:frase="FRASE"
     ></custom-header>
     <custom-form 
         v-bind:frase-inicial="FRASE"
@@ -16,16 +16,16 @@ import CustomHeader from './components/CustomHeader.vue'
 import CustomForm from './components/CustomForm.vue'
 export default {
   name: 'App',
-  components: {
-    CustomHeader,
-    CustomForm
-
-  },
   data: function(){
-    return {
-      FRASE: 'En un lugar de la mancha'
-    }
-  }
+     return {
+        FRASE: 'En un lugar de la mancha'
+      }
+    },
+  components: {
+     CustomHeader,
+     CustomForm
+ 
+   },
 }
 </script>
 

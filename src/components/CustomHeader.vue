@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Juego de escribir</h1>
-        <h2>{{fraseInicial}}</h2>  
+        <cite>{{frase}}</cite>  
     </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
     name: 'CustomHeader',
     props: {
-        fraseInicial: String,
+        frase: String,
     }
 }
 </script>
